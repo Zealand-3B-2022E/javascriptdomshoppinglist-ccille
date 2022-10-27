@@ -53,8 +53,11 @@ let elementInput = document.getElementById("newgoods")
 //Add event
 document.getElementById("addbutton").addEventListener("click",  addgoods)
 
+//Const List
+const GetList = document.getElementById("list")
+
 //Function to hide element
-let elementsli = document.getElementById("list").addEventListener("click", ClickHidden)
+GetList.addEventListener("click", ClickHidden)
 
 function ClickHidden(e)
 {
@@ -66,6 +69,3 @@ function ClickHidden(e)
         clickElement.setAttribute("hidden", "true")
     }
 }
-
-
-
